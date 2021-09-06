@@ -9,6 +9,7 @@
  --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",sans-serif;
  --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
  --left: 0px 0px 0px 25%;
+ --contentmargin: 25% 0px 0px 30%;
 }
 
 html {
@@ -16,7 +17,7 @@ html {
 }
 
 header ul {
-    font: var(--font-mono);
+    font-family: var(--font-mono);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -41,7 +42,7 @@ main h1 h2 h3 {
 
 main h1 {
     color: var(--Green);
-    font: var(--font-mono);
+    font-family: var(--font-mono);
     font-size: 30px;
     line-height: 1.1;
     margin: var(--left);
@@ -72,12 +73,34 @@ main p {
 }
 
 .position {
-    margin: 20% 0px 0px 25%;
+    margin: var(--contentmargin);
     color: var(--Green);
+    font-size: 30px;
+    
+}
+
+.mainheaders {
+    color: var(--LightestSlate);
 }
 
 .maincontent {
-    color: var(--LightestSlate);
+    display: block;
+    color: var(--Slate);
+    font-size: 20px;
+    margin: var(--left);
+    font-family: var(--font-mono);
+    margin: 20px 0px 0px 30%;
+    
+
+}
+
+main ul li::before {
+    content: "\2022";  
+    color: var(--Green); 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1.1em; 
+    margin-left: -1em; 
 }
 
 #about-me {
@@ -93,5 +116,6 @@ main p {
 }
 
 #contact {
+    font-weight: bold;
     
 }
