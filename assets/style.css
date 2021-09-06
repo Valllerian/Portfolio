@@ -8,27 +8,90 @@
  --Green: #64ffda;
  --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",sans-serif;
  --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-
+ --left: 0px 0px 0px 25%;
 }
 
 html {
     background-color: var(--Navy);
 }
 
-
-header ul li::before {content: counter(); color: var(--Green);
-    display: inline-block; width: 1em; margin-left: -1.5em;
-    margin-right: 0.5em; text-align: right; direction: rtl}
-
-
 header ul {
-    font:var(--font-mono);
+    font: var(--font-mono);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     list-style-type:decimal-leading-zero;
     justify-content: space-between;
-    margin: 30px 50px 50px 80%;
-    color: var(--LightSlate);
+    margin: 30px 50px 250px 80%;
+    color: var(--Green);
    
+}
+
+header ul span {
+    color:var(--LightSlate)
+}
+
+main h1 h2 h3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
+
+main h1 {
+    color: var(--Green);
+    font: var(--font-mono);
+    font-size: 30px;
+    line-height: 1.1;
+    margin: var(--left);
+    
+}
+
+main h2 {
+    color: var(--LightestSlate);
+    font-size: 80px;
+    margin: var(--left);
+}
+
+main h3 {
+    color: var(--Slate);
+    font-size: 80px;
+    margin: var(--left);
+}
+
+main p {
+    color: var(--Slate);
+    font-size: 30px;
+    margin: var(--left);
+}
+
+.textmain {
+    font-size: 30px;
+    
+}
+
+.position {
+    margin: 20% 0px 0px 25%;
+    color: var(--Green);
+}
+
+.maincontent {
+    color: var(--LightestSlate);
+}
+
+#about-me {
+
+}
+
+#experience {
+
+}
+
+#projects {
+
+}
+
+#contact {
+    
 }
