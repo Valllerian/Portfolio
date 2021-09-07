@@ -74,6 +74,30 @@ nav ul img:hover {
     transition: 330ms ease-in-out;
 }
 
+.nav2 {
+    color: var(--LightSlate);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    position: fixed;
+    left: 98%;
+    line-height: 2;
+}
+
+.nav2:hover {
+    color: var(--Green);
+    transform: scale(1.1);
+    transition: 330ms ease-in-out;
+}
+
+.nav2::before{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100px;
+    margin: 15px auto;
+    background-color: var(--Slate);
+}
 a {
     display: inline-block;
     text-decoration: none;
@@ -85,6 +109,7 @@ main h1 h2 h3 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    text-align: center;
 }
 
 main h1 {
@@ -182,6 +207,9 @@ main a img:hover{
     font-family: var(--font-mono);
     margin: 20px 0px 0px 30%;
     position: relative;
+    width: 25%;
+    line-height: 1.5;
+    text-justify: inter-word;
 }
 
 main ul li::before {
@@ -221,23 +249,20 @@ main ul li::before {
 #contact {
     display: block;
     font-weight: bold;
-    margin: 10% 0px 0px 30%;
+    margin: 7% 0px 0px 30%;
     color: var(--Green);
     font-size: 30px;
-    
     color: var(--Green);
     font-size: 30px;
     
 }
-
-
 
 .intouch {
     color: var(--Green);
     font-family: var(--font-mono);
     font-size: 30px;
     line-height: 1.1;
-    margin: 2% 0px 2% 40%;
+    margin: 2% 0px 2% 30%;
     display: block;
     position: relative;
     padding: 10px;
@@ -259,4 +284,5 @@ footer {
     font-family: var(--font-mono); 
     box-shadow: 0 0 50px rgb(0 0 0 / 75%);
     clip-path: inset(-75px 0px 0px 0px);
+    padding: 5px;
 }
