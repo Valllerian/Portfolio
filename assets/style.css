@@ -69,7 +69,8 @@ main p {
 
 .textmain {
     font-size: 30px;
-    
+    position: relative;
+    display: block;
 }
 
 .position {
@@ -90,6 +91,7 @@ main p {
     margin: var(--left);
     font-family: var(--font-mono);
     margin: 20px 0px 0px 30%;
+    position: relative;
     
 
 }
@@ -107,15 +109,63 @@ main ul li::before {
 
 }
 
-#experience {
+.avatar {
+    margin: 0px 0px 0px 50%;
+    /* position: absolute;
+    bottom: -950px;
+    left: 1100px;
+    object-fit: cover; */
+}
 
+.middleelement  {
+    margin: 10% 0px 10% 30%;
+    font-size: 30px;
+    position: relative;
+    display: inline;
+}
+
+#experience {
+    margin: 5% 0px 0px 30%;
+    color: var(--Green);
+    font-size: 30px;
 }
 
 #projects {
+    color: var(--Green);
+    font-size: 30px;
 
 }
 
 #contact {
     font-weight: bold;
+    margin: 5% 0px 0px 30%;
+    color: var(--Green);
+    font-size: 30px;
+    text-align: center;
+    color: var(--Green);
+    font-size: 30px;
     
+}
+
+footer {
+    text-align: center;
+    margin: 10% 0px 0px 0px;
+    
+    display: block;
+    color: var(--Slate);
+    font-size: 20px;
+    font-family: var(--font-mono); 
+}
+
+.intouch {
+    color: var(--Green);
+    font-family: var(--font-mono);
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 2% 0px 2% 40%;
+    display: block;
+    position: relative;
+    padding: 10px;
+    border: var(--Green) solid;
+    width: fit-content;
 }
