@@ -68,6 +68,10 @@ nav ul::after {
     background-color: var(--Slate);
 }
 
+nav ul img:hover {
+    transform: scale(1.2);
+}
+
 a {
     display: inline-block;
     text-decoration: none;
@@ -117,6 +121,12 @@ main img {
 
 main img:hover {
     border: solid white;
+
+}
+
+main a img:hover{
+    box-shadow: 50px 50px 50px var(--LightestNavy);
+    transform: scale(1.1);
 }
 
 .card {
@@ -217,7 +227,6 @@ main ul li::before {
 footer {
     text-align: center;
     margin: 10% 0px 0px 0px;
-    
     display: block;
     color: var(--Slate);
     font-size: 20px;
