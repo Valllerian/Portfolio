@@ -109,10 +109,32 @@ main p {
 
 main img {
     border: solid var(--Green);
-    padding: 1%;
+    padding: 5%;
     border-radius: 5%;
     margin: 0 20px 10px 0;
     position: relative;
+}
+
+main img:hover {
+    border: solid white;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    margin: 0px 0px 0px 50%;
+    
+    
+}
+.card .top {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    top: 0;
+}
+.card:hover .top {
+    display: inline;
 }
 
 .textmain {
@@ -154,13 +176,7 @@ main ul li::before {
 #about-me {
 }
 
-.avatar {
-    margin: 0px 0px 0px 50%;
-    /* position: absolute;
-    bottom: -950px;
-    left: 1100px;
-    object-fit: cover; */
-}
+
 
 .middleelement  {
     margin: 10% 0px 10% 30%;
@@ -217,3 +233,5 @@ footer {
     border: var(--Green) solid;
     width: fit-content;
 }
+
+
