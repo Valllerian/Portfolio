@@ -140,7 +140,7 @@ main img:hover {
 .textmain {
     font-size: 30px;
     position: relative;
-    display: block;
+    display: inline;
 }
 
 .position {
@@ -148,6 +148,10 @@ main img:hover {
     color: var(--Green);
     font-size: 30px;
     
+}
+
+.positionimg {
+    margin: 2% 0px 0px 30%;
 }
 
 .mainheaders {
@@ -199,11 +203,12 @@ main ul li::before {
 }
 
 #contact {
+    display: block;
     font-weight: bold;
-    margin: 15% 0px 0px 30%;
+    margin: 10% 0px 0px 30%;
     color: var(--Green);
     font-size: 30px;
-    text-align: center;
+    
     color: var(--Green);
     font-size: 30px;
     
@@ -233,5 +238,6 @@ footer {
     border: var(--Green) solid;
     width: fit-content;
 }
+
 
 
