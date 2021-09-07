@@ -16,6 +16,11 @@ html {
     background-color: var(--Navy);
 }
 
+header {
+    box-shadow: 0 0 50px rgb(0 0 0 / 75%);
+    clip-path: inset(0px 0px -75px 0px);
+}
+
 header ul {
     font-family: var(--font-mono);
     display: flex;
@@ -25,19 +30,55 @@ header ul {
     justify-content: space-between;
     margin: 30px 50px 250px 80%;
     color: var(--Green);
-   
 }
 
 header ul span {
     color:var(--LightSlate)
 }
 
+header ul span:hover {
+    color: var(--Green);
+}
+
+nav {
+    display: block;
+    position: fixed;
+    top: 15%;
+}
+
+nav ul {
+    list-style-type:none;
+}
+
+nav ul::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 420px;
+    margin: 15px auto;
+    background-color: var(--Slate);
+}
+
+nav ul::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--Slate);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    line-height: 3;
+}
 main h1 h2 h3 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
-    
 }
 
 main h1 {
@@ -46,7 +87,6 @@ main h1 {
     font-size: 30px;
     line-height: 1.1;
     margin: var(--left);
-    
 }
 
 main h2 {
@@ -65,6 +105,14 @@ main p {
     color: var(--Slate);
     font-size: 30px;
     margin: var(--left);
+}
+
+main img {
+    border: solid var(--Green);
+    padding: 1%;
+    border-radius: 5%;
+    margin: 0 20px 10px 0;
+    position: relative;
 }
 
 .textmain {
@@ -92,8 +140,6 @@ main p {
     font-family: var(--font-mono);
     margin: 20px 0px 0px 30%;
     position: relative;
-    
-
 }
 
 main ul li::before {
@@ -106,7 +152,6 @@ main ul li::before {
 }
 
 #about-me {
-
 }
 
 .avatar {
@@ -133,12 +178,13 @@ main ul li::before {
 #projects {
     color: var(--Green);
     font-size: 30px;
+    margin: 5% 0px 0px 30%;
 
 }
 
 #contact {
     font-weight: bold;
-    margin: 5% 0px 0px 30%;
+    margin: 15% 0px 0px 30%;
     color: var(--Green);
     font-size: 30px;
     text-align: center;
@@ -155,6 +201,8 @@ footer {
     color: var(--Slate);
     font-size: 20px;
     font-family: var(--font-mono); 
+    box-shadow: 0 0 50px rgb(0 0 0 / 75%);
+    clip-path: inset(-75px 0px 0px 0px);
 }
 
 .intouch {
