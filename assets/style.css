@@ -224,7 +224,7 @@ main a img:hover{
     font-family: var(--font-mono);
     margin: 1% 0px 0px 30%;
     position: relative;
-    width: 25%;
+    width: 35vw;
     line-height: 1.5;
     text-justify: inter-word;
 }
