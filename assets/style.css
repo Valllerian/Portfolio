@@ -1,3 +1,5 @@
+/* Variables for frequently used parameters */
+
 :root {
  --Navy: #0a192f;
  --LightNavy: #112240;
@@ -12,16 +14,22 @@
  --contentmargin: 25% 0px 0px 30%;
  --mainfont: 30px;
  --transition: 375ms ease-in-out;
-}
+} 
+
+
 
 html {
     background-color: var(--Navy);
 }
 
+/* Adding shadows on one side of the element*/
+
 header {
     box-shadow: 0 0 50px rgb(0 0 0 / 75%);
     clip-path: inset(0px 0px -75px 0px);
 }
+
+/* Styling of main header with navigation links */
 
 header ul {
     font-family: var(--font-mono);
@@ -30,7 +38,7 @@ header ul {
     align-items: center;
     list-style-type:decimal-leading-zero;
     justify-content: space-between;
-    margin: 30px 50px 250px 80%;
+    margin: 0px 50px 250px 80%;
     color: var(--Green);
 }
 
@@ -42,6 +50,8 @@ header ul span:hover {
     color: var(--Green);
     transition: var(--transition);
 }
+
+/* Styling of left and right nav bars */
 
 nav {
     display: block;
@@ -100,6 +110,7 @@ nav ul img:hover {
     margin: 15px auto;
     background-color: var(--Slate);
 }
+
 a {
     display: inline-block;
     text-decoration: none;
@@ -108,6 +119,7 @@ a {
     line-height: 3;
 }
 
+/* Main "greeting" styling */
 main h1 h2 h3 {
     display: flex;
     flex-wrap: wrap;
@@ -141,6 +153,8 @@ main p {
     margin: var(--left);
 }
 
+/* Avatar styling and responsove design */
+
 main img {
     border: solid var(--Green);
     padding: 5%;
@@ -159,6 +173,8 @@ main a img:hover{
     transform: scale(1.1);
     transition: var(--transition);
 }
+
+/* Added filter switch effect */
 
 .card {
     position: relative;
@@ -180,6 +196,8 @@ main a img:hover{
     transition: var(--transition);
 
 }
+
+/* Main text style */
 
 .textmain {
     font-size: var(--mainfont);
@@ -209,6 +227,8 @@ main a img:hover{
     text-justify: inter-word;
 }
 
+/* recoloring text bullets */
+
 main ul li::before {
     content: "\2022";  
     color: var(--Green); 
@@ -218,13 +238,15 @@ main ul li::before {
     margin-left: -1em; 
 }
 
+/* ID added to make clickable header links */
+
 #about-me {
     margin: var(--contentmargin);
     color: var(--Green);
     font-size: var(--mainfont);
 }
 
-
+/* Class for better content positioning\layout */
 
 .middleelement  {
     margin: 10% 0px 10% 30%;
@@ -256,6 +278,8 @@ main ul li::before {
     
 }
 
+/* clickable link for email */
+
 .intouch {
     color: var(--Green);
     font-family: var(--font-mono);
@@ -274,6 +298,8 @@ main ul li::before {
     transition: var(--transition);
 }
 
+/* footer styling + shadows */
+
 footer {
     text-align: center;
     margin: 10% 0px 0px 0px;
@@ -286,9 +312,19 @@ footer {
     padding: 5px;
 }
 
+/* responsive design for diff screen types */
+
 @media screen and (max-width: 1332px) {
+    body {
+        justify-content:stretch;
+
+    }
     .maincontent {
         width: 55%;
+    }
+
+    body header ul{
+        margin: 0px 0px 35px 0px;
     }
 
   }
