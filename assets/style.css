@@ -10,8 +10,8 @@
  --Green: #64ffda;
  --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",sans-serif;
  --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
- --left: 0px 0px 0px 25%;
- --contentmargin: 25% 0px 0px 30%;
+ --left: 0px 0px 0px 25vw;
+ --contentmargin: 25vw 0px 0px 30vw;
  --mainfont: 30px;
  --transition: 375ms ease-in-out;
 } 
@@ -33,12 +33,11 @@ header {
 
 header ul {
     font-family: var(--font-mono);
-    display: flex;
+    display: flex;  
     flex-wrap: wrap;
-    align-items: center;
     list-style-type:decimal-leading-zero;
     justify-content: space-between;
-    margin: 0px 50px 250px 80%;
+    margin: 0px 0px 250px 80vw;
     color: var(--Green);
 }
 
@@ -123,7 +122,6 @@ a {
 main h1 h2 h3 {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     text-align: center;
 }
 
@@ -333,24 +331,32 @@ footer {
 
     }
     .maincontent {
-        width: 55%;
+        width: 55vw;
     }
 
     body header ul{
-        margin: 0px 0px 10% 0px;
+        margin: 0px 0px 10vw 0px;
     }
     #projects {
         margin: none;
     }
     .positionimg {
-        margin: 5% 0px 0px 15% ;
+        margin: 5% 0px 0px 15vw ;
     }
     
+    main h2 {
+        font-size: 40px;
+    }
+
+    main h3 {
+        font-size: 40px;
+    }
+
   }
 
 @media screen and (max-width: 992px) {
     .maincontent {
-        width: 75%;
+        width: 75vw;
     }
 
     img {
@@ -361,7 +367,7 @@ footer {
 
 @media screen and (max-width: 750px) {
     .maincontent {
-        width: 100%;
+        width: 100vw;
     }
 
     img {
@@ -371,7 +377,7 @@ footer {
 
   @media screen and (max-width: 600px) {
     .maincontent {
-        width: 100%;
+        width: 100vw;
         margin: none;
     }
 
