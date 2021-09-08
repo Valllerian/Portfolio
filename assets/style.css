@@ -172,6 +172,7 @@ main a img:hover{
     box-shadow: 50px 50px 50px var(--LightestNavy);
     transform: scale(1.1);
     transition: var(--transition);
+    filter:grayscale(0%);
 }
 
 /* Added filter switch effect */
@@ -205,6 +206,9 @@ main a img:hover{
     display: inline;
 }
 
+.filter {
+    filter:blur(3px);
+}
 
 .positionimg {
     margin: 2% 0px 0px 30%;

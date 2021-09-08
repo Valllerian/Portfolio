@@ -47,7 +47,7 @@ On the right - active link to send an email.
 
 There are screenshots of main projects in "Project" section of the portfolio.
 
-Each of them increases in size when hovered, create shadow, border changes color and screenshots are also clickable links that lead to the project website.
+Each of them increases in size when hovered, filter added, create shadow, border changes color and screenshots are also clickable links that lead to the project website.
 
 <br>
 <img alt="Project screenshots" src="images/readme4.jpg" />
