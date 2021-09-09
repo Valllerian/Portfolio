@@ -70,7 +70,7 @@ nav ul::before {
     content: "";
     display: block;
     width: 2px;
-    height: 420px;
+    height: 16vw;
     margin: 15px auto;
     background-color: var(--Slate);
 }
@@ -79,7 +79,7 @@ nav ul::after {
     content: "";
     display: block;
     width: 2px;
-    height: 90px;
+    height: 5vw;
     margin: 0px auto;
     background-color: var(--Slate);
 }
@@ -95,7 +95,7 @@ nav ul img:hover {
     text-orientation: upright;
     font-size: 15px;
     position: fixed;
-    left: 98%;
+    left: 97vw;
     line-height: 2;
 }
 
@@ -109,7 +109,7 @@ nav ul img:hover {
     content: "";
     display: inline-block;
     width: 2px;
-    height: 100px;
+    height: 5vw;
     margin: 15px auto;
     background-color: var(--Slate);
 }
@@ -326,7 +326,17 @@ footer {
         margin: 0px 0px 10% 0px;
     }
     
+    main div {
+        transform: scale(0.7);
+    }
     
+    main a {
+        transform: scale(0.7);
+    }
+
+    .positionimg {  
+        width: 50vw;
+    }
   }
 
 @media screen and (max-width: 1332px) {
@@ -360,18 +370,21 @@ footer {
 
 @media screen and (max-width: 992px) {
     .maincontent {
-        width: 75vw;
+        width: 60vw;
     }
 
-    img {
-        transform: scale(0.9);
+    .positionimg {  
+        width: 15vw;
     }
+
+
+
   }
 
 
 @media screen and (max-width: 750px) {
     .maincontent {
-        width: 100vw;
+        width: 70vw;
     }
 
     img {
@@ -381,7 +394,7 @@ footer {
 
   @media screen and (max-width: 600px) {
     .maincontent {
-        width: 100vw;
+        width: 70vw;
         margin: none;
     }
 
