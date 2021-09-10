@@ -226,7 +226,7 @@ main a img:hover{
     font-size: 20px;
     margin: var(--left);
     font-family: var(--font-mono);
-    margin: 1% 0px 0px 30%;
+    margin: 1% 0px 0px 30vw;
     position: relative;
     width: 35vw;
     line-height: 1.5;
@@ -366,17 +366,21 @@ footer {
         font-size: 40px;
     }
 
+    .nav2 {
+        display: none;
+    }
+
   }
 
 @media screen and (max-width: 992px) {
     .maincontent {
-        width: 60vw;
+        width: 50vw;
+        margin: 1% 0px 0px 20vw;
     }
 
     .positionimg {  
         width: 15vw;
     }
-
 
 
   }
@@ -390,11 +394,13 @@ footer {
     img {
         transform: scale(0.75);
     }
+
+    
   }
 
   @media screen and (max-width: 600px) {
     .maincontent {
-        width: 70vw;
+        width: 60vw;
         margin: none;
     }
 
