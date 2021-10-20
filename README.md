@@ -30,7 +30,7 @@ There are slides with screenshots of main projects in "Project" section of the p
 Each section includes a brief description as well as links to the deployed application and GitHub repo.
 
 <br>
-<img alt="Project screenshots" src="./images/ReadMe1.jpg" />
+<img alt="Project screenshots" src="./images/ReadMe2.jpg" />
 <br>
 
  "Contact me" section is located in the footer. There are active buttons that direct us to different social platforms as well as a send email button.
