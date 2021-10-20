@@ -23,20 +23,20 @@ https://github.com/Valllerian/Portfolio
 Websites includes some usable links to navigate through content as well as a button to download a resume:
 
 <br>
-<img alt="Header of the website" src="images/readme1.jpg" />
+<img alt="Header of the website" src="./images/ReadMe1.jpg" />
 <br>
 
 There are slides with screenshots of main projects in "Project" section of the portfolio.
 Each section includes a brief description as well as links to the deployed application and GitHub repo.
 
 <br>
-<img alt="Project screenshots" src="images/readme2.jpg" />
+<img alt="Project screenshots" src="./images/ReadMe1.jpg" />
 <br>
 
  "Contact me" section is located in the footer. There are active buttons that direct us to different social platforms as well as a send email button.
 
 <br>
-<img alt="page footer with socials" src="images/readme3.jpg" />
+<img alt="page footer with socials" src="images/ReadMe3.jpg" />
 <br>
 
 
