@@ -20,43 +20,23 @@ Current project has been saved in my personal GitHub repository and is currently
 https://github.com/Valllerian/Portfolio
 
 ## Usage
-Websites includes some usable links to navigate through content:
+Websites includes some usable links to navigate through content as well as a button to download a resume:
 
 <br>
 <img alt="Header of the website" src="images/readme1.jpg" />
 <br>
 
-Each link would bring us to the corresponding paragraph:
-
-(Avatar picture also has a hover class added to imitate the filter)
-
-<br>
-<img alt="Paragraph 1" src="images/readme3.jpg" />
-<br>
-
-There is a nav bar on the left and right part of the screen. 
-
-
-Left one - icons of social media with direct links on-click.
-
-On the right - active link to send an email.
+There are slides with screenshots of main projects in "Project" section of the portfolio.
+Each section includes a brief description as well as links to the deployed application and GitHub repo.
 
 <br>
-<img alt="NavBars" src="images/readme2.jpg" />
+<img alt="Project screenshots" src="images/readme2.jpg" />
 <br>
 
-There are screenshots of main projects in "Project" section of the portfolio.
-
-Each of them increases in size when hovered, filter added, create shadow, border changes color and screenshots are also clickable links that lead to the project website.
+ "Contact me" section is located in the footer. There are active buttons that direct us to different social platforms as well as a send email button.
 
 <br>
-<img alt="Project screenshots" src="images/readme4.jpg" />
-<br>
-
-In the last section of the portfolio "Contact me" there is an active "button" to contact me via email.
-
-<br>
-<img alt="Active button to send a direct emal" src="images/readme5.jpg" />
+<img alt="page footer with socials" src="images/readme3.jpg" />
 <br>
 
 
@@ -68,9 +48,8 @@ Following resources  have been used while working on the project:
 
     https://www.w3schools.com/
 
-2) Stackoverflow was used to find information on creating nav bars:
-
-    https://stackoverflow.com/
+2) Bootstrap elements were used (footer\navbar\slides)
+    https://getbootstrap.com/docs/5.1/getting-started/introduction/
 
 
 3) Following ReadMe Tutorial has helped me to write a proper, well-structured ReadMe file:
