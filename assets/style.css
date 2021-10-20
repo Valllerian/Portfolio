@@ -80,7 +80,7 @@ main p {
 }
 
 .maincontent {
-    display: block;
+    
     color: var(--Slate);
     font-size: 20px;
     font-family: var(--font-mono);
