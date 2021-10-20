@@ -67,6 +67,11 @@ main p {
     font-size: var(--mainfont);
 }
 
+.navbarText {
+    color: var(--Green);
+    font-size: var(--mainfont);
+    font-family: var(--font-mono);
+}
 .projectExample {
     color: var(--LightGreen);
     font-size: 20px;
@@ -79,9 +84,13 @@ main p {
     color: var(--Slate);
     font-size: 20px;
     font-family: var(--font-mono);
-    width: 35vw;
+    
     line-height: 1.5;
     
+}
+
+.onRight {
+    text-align:right;
 }
 
 footer .main-footer{  padding: 20px 0;  background: #252525;}

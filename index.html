@@ -9,61 +9,72 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
         <link rel="stylesheet" href="./assets/reset.css" />
         <link rel="stylesheet" href="./assets/style.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <!-- Visiable part of the website -->
 <body class = "body">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="collapse navbar-collapse" id="navbarText">
+    <nav class="navbar navbar-expand-lg  bg-dark">
+        <div class="container collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About Me <span class="sr-only"></span></a>
+            <li class="nav-item ">
+              <a class="navbarText nav-link" href="#about-me">01.About Me   | </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Experience</a>
+              <a class="navbarText nav-link" href="#experience">02.Experience   |</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="navbarText nav-link" href="#projects">03.Projects   |</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact </a>
+                <a class="navbarText nav-link" href="#footer">04.Contact    |</a>
+              </li>
+              <li class="nav-item">
+                    <p>
+                       <a href="images/Portfolio.pdf" target="_blank" class="navbarText " download><i class="fa fa-download"></i>Download CV</a>
+                    </p>
+               
               </li>
           </ul>
          
         </div>
       </nav>
-<main  class="container">
+    <main  class="container">
+    <div class="mt-5 mb-5">
       <h1>Hi, my name is</h1>
       <h2>Valerii Bihun.</h2>
       <h3>And I build things for the web.</h3>
       <p>I am a future web developer and a current student of Denver Univercity Coding bootcamp.</p>
-
-      <section1 class="textmain">
-          <h4 id="about-me">01.<span class="mainheaders"> About Me</span></h4>
-          <p class="maincontent">Hello! My name is Valerii and I enjoy creating things that live on the internet!
-              I am originaly from Kyiv, Ukraine. But currently residint in Denver, CO.
-              Here are a few technologies I`ve been working with recently:
-              <ul class="maincontent">
-                  <li>JavaScript</li>
-                  <li>CSS</li>
-                  <li>HTML</li>
-                  <li>Solidity</li>
-              </ul>
-          </p>
-
-    <section2 class="text-right middleelement">
-            <h5 id="experience">02.<span class="mainheaders"> Experience</span></h5>
+    </div>
+    <div class="mt-5 mb-5">
+        <h4 id="about-me">01.<span class="mainheaders"> About Me:</span></h4>
+        <p class="maincontent">Hello! My name is Valerii and I enjoy creating things that live on the internet!
+            I am originaly from Kyiv, Ukraine. But currently residint in Denver, CO.
+            Here are a few technologies I`ve been working with recently:
+            <ul class="maincontent">
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>Solidity</li>
+            </ul>
+        </p>
+    </div>
+  
+    <div class="onRight mt-5 mb-5 text-right middleelement">
+            <h5 id="experience">02.<span class="mainheaders"> Experience:</span></h5>
             <p class="maincontent">I’m currently working at a non-tech position and have no experience in IT-related jobs but I look forward to be a part of an entirely different environment! Given my entrepreneurial and curious nature, I am constantly researching the topic (currently working on a technical side)  and broadening my knowledge. </p> 
-    </section2>
+    </div>
 
-    <section3 class="middleelement">
+    <section3 class=" mt-5 mb-5 middleelement">
         <h6 id="projects">03.<span class="mainheaders"> Projects:</span></h6>
         <p class="projectExample"> 3.1 Weather Dashboard</p> 
         <p class="maincontent"> This is a a simple weather application that allows a user to find out the weather forecast in the city! This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code.</p> 
-        <p class="maincontent"> Deployed application is available on: <a href="https://valllerian.github.io/Weather-Dashboard/">valllerian.github.io/weather-dashboard/</a></p> 
+        <p class="mt-5  maincontent"> Deployed application is available on: <a href="https://valllerian.github.io/Weather-Dashboard/" target="_blank">valllerian.github.io/weather-dashboard/</a></p> 
+        <p class=" mb-5 maincontent"> GitHub repo is available on: <a href="https://github.com/Valllerian/Weather-Dashboard" target="_blank">https://github.com/Valllerian/Weather-Dashboard</a></p> 
+        
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -85,11 +96,13 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          <div class="onRight">
+            <p class="mt-5 projectExample"> 3.2 A Simple Code Quiz</p> 
+            <p class="maincontent "> This is a Coding Quiz for JavaScript.</p> 
+            <p class=" mt-5  maincontent "> Deployed application is available on: <a href="https://valllerian.github.io/Code-Quiz-Project/" target="_blank">valllerian.github.io/Code-Quiz-Project/</a></p> 
+            <p class=" mb-5 maincontent"> GitHub repo is available on: <a href="https://github.com/Valllerian/Code-Quiz-Project" target="_blank">https://github.com/Valllerian/Code-Quiz-Project</a></p> 
+      </div>
           
-          <p class=" projectExample"> 3.2 A Simple Code Quiz</p> 
-          <p class="maincontent "> This is a Coding Quiz for JavaScript.</p> 
-          <p class="maincontent "> Deployed application is available on: <a href="https://valllerian.github.io/Code-Quiz-Project/">valllerian.github.io/Code-Quiz-Project/</a></p> 
-    
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -109,22 +122,44 @@
               </div>
           </div>
           
-          <p class="projectExample"> 3.3 Planner project</p> 
+          <p class="mt-5 projectExample"> 3.3 Planner project</p> 
           <p class="maincontent"> This is a a simple calendar application that allows a user to save events for each hour of the day. </p> 
-          <p class="maincontent"> Deployed application is available on: <a href="https://valllerian.github.io/Planner-project/">valllerian.github.io/Planner-project/</a></p>  
+          <p class="mt-5  maincontent"> Deployed application is available on: <a href="https://valllerian.github.io/Planner-project/" target="_blank">valllerian.github.io/Planner-project/</a></p>  
+          <p class="mb-5 maincontent"> GitHub repo is available on: <a href="https://github.com/Valllerian/Planner-project" target="_blank">https://github.com/Valllerian/Planner-project</a></p> 
 
           <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="6000">
+              <div class="carousel-item active" data-bs-interval="4000">
                 <img src="./images/image7.jpg" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item" data-bs-interval="6000">
+              <div class="carousel-item" data-bs-interval="4000">
                 <img src="./images/image8.jpg" class="d-block w-100" alt="...">
               </div>
              
               </div>
             </div>
           </div>
+
+          <div class="onRight">
+            <p class="mt-5 projectExample"> 3.4 Main Project #1 - "Live the Movie"</p> 
+            <p class="maincontent "> This project was created in order to provide our users with a holiday filled evening. Using javascript, css, and HTML, I created a holiday themed page from scratch that uses two third party APIs, Spoonacular and TMDB, to fetch holiday themed recipes and movies.</p> 
+            <p class=" mt-5  maincontent "> Deployed application is available on: <a href="https://laurelthorburn.github.io/Live-The-Movie/" target="_blank">https://laurelthorburn.github.io/Live-The-Movie/</a></p> 
+            <p class=" mb-5 maincontent"> GitHub repo is available on: <a href="https://github.com/Valllerian/Live-The-Movie" target="_blank">https://github.com/Valllerian/Live-The-Movie</a></p> 
+      </div>
+
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="./images/image9.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="./images/image10.jpg" class="d-block w-100" alt="...">
+          </div>
+         
+          </div>
+        </div>
+      </div>
+
     </section3>
 
 
@@ -132,7 +167,7 @@
 
     </main>
 
-      <footer id="footer" class="footer-1">
+      <footer id="footer" class="mt-5 footer-1">
         <div class="main-footer widgets-dark typo-light">
         <div class="container">
         <div class="row">
@@ -149,10 +184,10 @@
         <h5 class="widget-title">Contact Me<span></span></h5>
         <p><a href="mailto:valeriibihun.co@gmail.com" title="glorythemes">valeriibihun.co@gmail.com</a></p>
         <ul class="social-footer2">
-        <li class=""><i class="fab fa-instagram"></i></li>
-        <li class=""><i class="fab fa-github"></i></li>
-        <li class=""><i class="fab fa-linkedin-in"></i></li>
-        <li class=""><i class="fab fa-twitter"></i></li>
+        <li class=""><a href="https://www.instagram.com/vallerianinst/" target="_blank"><i class="fab fa-instagram"></i> </a></li>
+        <li class=""><a href="https://github.com/Valllerian" target="_blank"><i class="fab fa-github"></i></i> </a></li>
+        <li class=""><a href="https://www.linkedin.com/in/valerii-bihun-8b0450217/" target="_blank"><i class="fab fa-linkedin-in"></i> </a></li>
+        <li class=""><a href="https://twitter.com/VallerianCRPT" target="_blank"><i class="fab fa-twitter"></i> </a></li>
         </ul>
         </div>
         </div>
