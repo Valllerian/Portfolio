@@ -5,105 +5,164 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Valerii Bihun</title>
+        <script src="https://kit.fontawesome.com/c419192472.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="./assets/reset.css" />
         <link rel="stylesheet" href="./assets/style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <!-- Visiable part of the website -->
-<body>
-    <!-- Main header with clickable links that direct to the mentioned section -->
-    <header>
-        <ul>
-            <li>
-                <a href="#about-me"><span>About Me</span></a>
+<body class = "body">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About Me <span class="sr-only"></span></a>
             </li>
-            <li>
-                <a href="#experience"><span>Experience</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experience</a>
             </li>
-            <li>
-                <a href="#projects"><span>Projects</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
             </li>
-            <li>
-                <a href="#contact"><span>Contact</span></a>
-            </li>
-        </ul>
-        
-    </header>
-    <!-- Left side navbar with clickable links to social media profiles -->
-    <nav >
-        <ul>
-        <li>
-            <a href="https://github.com/Valllerian"><img src="./images/git.jpg" alt="GitHub icon" style="width:42px;height:42px;"></a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/valerii-bihun-8b0450217/"><img src="./images/linked.jpg" style="width:42px;height:42px;"></a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/vallerianinst/"><img src="./images/inst.jpg" style="width:42px;height:42px;"></a>
-        </li>
-        </ul>
-    </nav>
-    <!-- Right side navbar with a clickable link to send an emal -->
-    <nav2>
-        <a href="mailto:valeriibihun.co@gmail.com" class="nav2"> valeriibihun.co@gmail.com</a>
-    </nav2>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact </a>
+              </li>
+          </ul>
+         
+        </div>
+      </nav>
+<main  class="container">
+      <h1>Hi, my name is</h1>
+      <h2>Valerii Bihun.</h2>
+      <h3>And I build things for the web.</h3>
+      <p>I am a future web developer and a current student of Denver Univercity Coding bootcamp.</p>
 
-    <!-- Main part\content of the website -->
-    <main>
-        <h1>Hi, my name is</h1>
-        <h2>Valerii Bihun.</h2>
-        <h3>And I build things for the web.</h3>
-        <p>I am a future web developer and a current student of Denver Univercity Coding bootcamp.</p>
+      <section1 class="textmain">
+          <h4 id="about-me">01.<span class="mainheaders"> About Me</span></h4>
+          <p class="maincontent">Hello! My name is Valerii and I enjoy creating things that live on the internet!
+              I am originaly from Kyiv, Ukraine. But currently residint in Denver, CO.
+              Here are a few technologies I`ve been working with recently:
+              <ul class="maincontent">
+                  <li>JavaScript</li>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                  <li>Solidity</li>
+              </ul>
+          </p>
 
-        <section1 class="textmain">
-            <h4 id="about-me">01.<span class="mainheaders"> About Me</span></h4>
-            <p class="maincontent">Hello! My name is Valerii and I enjoy creating things that live on the internet!
-                I am originaly from Kyiv, Ukraine. But currently residint in Denver, CO.
-                Here are a few technologies I`ve been working with recently:
-                <ul class="maincontent">
-                    <li>JavaScript</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>Solidity</li>
-                </ul>
-            </p>
-
-            <!--Profile picture with some responsive design  -->
-            <div class="card">
-            <img src="./images/tinted.jpg" alt="Valerii Bihun Photo" style="width:332x; height:512px;" >
-            <img src="./images/123.jpg" alt="Valerii Bihun Photo" style="width:332x; height:512px;" class="top">
-           </div>
-           
-        </section1>
-
-        <section2 class="middleelement">
+    <section2 class="text-right middleelement">
             <h5 id="experience">02.<span class="mainheaders"> Experience</span></h5>
             <p class="maincontent">I’m currently working at a non-tech position and have no experience in IT-related jobs but I look forward to be a part of an entirely different environment! Given my entrepreneurial and curious nature, I am constantly researching the topic (currently working on a technical side)  and broadening my knowledge. </p> 
-        </section2>
+    </section2>
 
-        <!--Section 3 has information about projects, contains clickable images that direct the user to the project website
-        also includes some responsive design  -->
-        <section3 class="middleelement">
-            <h6 id="projects">03.<span class="mainheaders"> Projects</span></h6>
-            <p class="maincontent">CSS Snippet Cheatsheet</p>
-            <a href="https://valllerian.github.io/CSS-Snippet-Cheatsheet/" class="positionimg"><img src="./images/Project1.jpg" alt="Project 1 screenshot" style="width:800px;height:300px;" class="filter" ></a>
-            <p class="maincontent">Basics of Search Engine Optimization</p>
-            <a href="https://valllerian.github.io/Basics-of-SEO/" class="positionimg"><img src="./images/Project2.jpg" alt="Project 2 screenshot" style="width:800px;height:300px;" class="filter" ></a>
-        </section3>
+    <section3 class="middleelement">
+        <h6 id="projects">03.<span class="mainheaders"> Projects:</span></h6>
+        <p class="projectExample"> 3.1 Weather Dashboard</p> 
+        <p class="maincontent"> This is a a simple weather application that allows a user to find out the weather forecast in the city! This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code.</p> 
+        <p class="maincontent"> Deployed application is available on: <a href="https://valllerian.github.io/Weather-Dashboard/">valllerian.github.io/weather-dashboard/</a></p> 
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/image1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/image3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+          <p class=" projectExample"> 3.2 A Simple Code Quiz</p> 
+          <p class="maincontent "> This is a Coding Quiz for JavaScript.</p> 
+          <p class="maincontent "> Deployed application is available on: <a href="https://valllerian.github.io/Code-Quiz-Project/">valllerian.github.io/Code-Quiz-Project/</a></p> 
+    
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/image4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/image5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/image6.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+          </div>
+          
+          <p class="projectExample"> 3.3 Planner project</p> 
+          <p class="maincontent"> This is a a simple calendar application that allows a user to save events for each hour of the day. </p> 
+          <p class="maincontent"> Deployed application is available on: <a href="https://valllerian.github.io/Planner-project/">valllerian.github.io/Planner-project/</a></p>  
 
-        <!-- Last Contact section includes the clickable link to send an email -->
-        <section4 class="textmain"> 
-            <h7 id="contact">04.<span class="mainheaders"> What is coming Next?</span></h7>
-            <a href="mailto:valeriibihun.co@gmail.com" class="intouch"> Get in touch...</a>
-            <p class="maincontent">Although I’m just starting my coding journey, my inbox is always open for new opportunities.
-            Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>  
-        </section4>
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="6000">
+                <img src="./images/image7.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="6000">
+                <img src="./images/image8.jpg" class="d-block w-100" alt="...">
+              </div>
+             
+              </div>
+            </div>
+          </div>
+    </section3>
+
+
+     
+
     </main>
-    <!-- Footer of the website -->
-    <footer>
-        <h> &#11088; Designed and Built by Valerii Bihun &#11088; </h>       
-    </footer>
 
+      <footer id="footer" class="footer-1">
+        <div class="main-footer widgets-dark typo-light">
+        <div class="container">
+        <div class="row">
+          
+        <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="widget subscribe no-box">
+        <h5 class="widget-title">VALERII BIHUN<span></span></h5>
+        <p>Although I’m just starting my coding journey, my inbox is always open for new opportunities. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+        </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="widget no-box">
+        <h5 class="widget-title">Contact Me<span></span></h5>
+        <p><a href="mailto:valeriibihun.co@gmail.com" title="glorythemes">valeriibihun.co@gmail.com</a></p>
+        <ul class="social-footer2">
+        <li class=""><i class="fab fa-instagram"></i></li>
+        <li class=""><i class="fab fa-github"></i></li>
+        <li class=""><i class="fab fa-linkedin-in"></i></li>
+        <li class=""><i class="fab fa-twitter"></i></li>
+        </ul>
+        </div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+          
+        </footer>
+    
 </body>
 
 </html>

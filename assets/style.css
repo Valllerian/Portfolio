@@ -1,129 +1,25 @@
-/* Variables for frequently used parameters */
-
 :root {
- --Navy: #0a192f;
- --LightNavy: #112240;
- --LightestNavy: #233554;
- --Slate: #8892b0;
- --LightSlate: #a8b2d1;
- --LightestSlate: #ccd6f6;
- --Green: #64ffda;
- --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",sans-serif;
- --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
- --left: 0px 0px 0px 25vw;
- --contentmargin: 25vw 0px 0px 30vw;
- --mainfont: 30px;
- --transition: 375ms ease-in-out;
-} 
+    --Navy: #0a192f;
+    --LightNavy: #112240;
+    --LightestNavy: #233554;
+    --Slate: #8892b0;
+    --LightSlate: #a8b2d1;
+    --LightestSlate: #ccd6f6;
+    --Green: #64ffda;
+    --LightGreen: #23b693;
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 
-
-
-html {
-    background-color: var(--Navy);
-}
-
-/* Adding shadows on one side of the element*/
-
-header {
-    box-shadow: 0 0 50px rgb(0 0 0 / 75%);
-    clip-path: inset(0px 0px -75px 0px);
-}
-
-/* Styling of main header with navigation links */
-
-header ul {
-    font-family: var(--font-mono);
-    display: flex;  
-    flex-wrap: wrap;
-    list-style-type:decimal-leading-zero;
-    justify-content: space-between;
-    margin: 0px 0px 250px 65vw;
-    color: var(--Green);
-}
-
-header ul li {
-    margin-left: 30px;
-}
-
-header ul span {
-    color:var(--LightSlate)
-}
-
-header ul span:hover {
-    color: var(--Green);
-    transition: var(--transition);
-}
-
-/* Styling of left and right nav bars */
-
-nav {
-    display: block;
-    position: fixed;
-    top: 15%;
-}
-
-nav ul {
-    list-style-type:none;
-}
-
-nav ul::before {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 16vw;
-    margin: 15px auto;
-    background-color: var(--Slate);
-}
-
-nav ul::after {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 5vw;
-    margin: 0px auto;
-    background-color: var(--Slate);
-}
-
-nav ul img:hover {
-    transform: scale(1.2);
-    transition: var(--transition);
-}
-
-.nav2 {
-    color: var(--LightSlate);
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    font-size: 15px;
-    position: fixed;
-    left: 97vw;
-    line-height: 2;
-}
-
-.nav2:hover {
-    color: var(--Green);
-    transform: scale(1.1);
-    transition: var(--transition);
-}
-
-.nav2::before{
-    content: "";
-    display: inline-block;
-    width: 2px;
-    height: 5vw;
-    margin: 15px auto;
-    background-color: var(--Slate);
-}
-
-a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-    line-height: 3;
-}
-
-/* Main "greeting" styling */
-main h1 h2 h3 {
+    --mainfont: 30px;
+    --transition: 375ms ease-in-out;
+   } 
+   
+   
+.body {
+       background-color: var(--Navy);
+   }
+   
+   main h1 h2 h3 {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -134,135 +30,34 @@ main h1 {
     font-family: var(--font-mono);
     font-size: var(--mainfont);
     line-height: 1.1;
-    margin: var(--left);
+    
+    
 }
 
 main h2 {
     color: var(--LightestSlate);
     font-size: 80px;
-    margin: var(--left);
+
 }
 
 main h3 {
     color: var(--Slate);
     font-size: 80px;
-    margin: var(--left);
+   
 }
 
 main p {
     color: var(--Slate);
     font-size: var(--mainfont);
-    margin: var(--left);
-}
-
-/* Avatar styling and responsove design */
-
-main img {
-    border: solid var(--Green);
-    padding: 5%;
-    border-radius: 5%;
-    margin: 0 20px 10px 0;
-    position: relative;
-}
-
-main img:hover {
-    border: solid white;
-
-}
-
-main a img:hover{
-    box-shadow: 50px 50px 50px var(--LightestNavy);
-    transform: scale(1.1);
-    transition: var(--transition);
-    filter:grayscale(0%);
-}
-
-/* Added filter switch effect */
-
-.card {
-    position: relative;
-    display: inline-block;
-    margin: 0px 0px 0px 50%;
-    
     
 }
-.card .top {
-    display: none;
-    position: absolute;
-    z-index: 99;
-    left: 0;
-    top: 0;
-}
-.card:hover .top {
-    display: inline;
-    transform: scale(1.2);
-    transition: var(--transition);
-
-}
-
-/* Main text style */
-
-.textmain {
-    font-size: var(--mainfont);
-    position: relative;
-    display: inline;
-}
-
-.filter {
-    filter:blur(3px);
-}
-
-.positionimg {
-    margin: 2% 0px 0px 30%;
-}
-
-.mainheaders {
-    color: var(--LightestSlate);
-}
-
-.maincontent {
-    display: block;
-    color: var(--Slate);
-    font-size: 20px;
-    margin: var(--left);
-    font-family: var(--font-mono);
-    margin: 1% 0px 0px 30vw;
-    position: relative;
-    width: 35vw;
-    line-height: 1.5;
-    text-justify: inter-word;
-}
-
-/* recoloring text bullets */
-
-main ul li::before {
-    content: "\2022";  
-    color: var(--Green); 
-    font-weight: bold; 
-    display: inline-block; 
-    width: 1.1em; 
-    margin-left: -1em; 
-}
-
-/* ID added to make clickable header links */
 
 #about-me {
-    margin: var(--contentmargin);
     color: var(--Green);
     font-size: var(--mainfont);
 }
 
-/* Class for better content positioning\layout */
-
-.middleelement  {
-    margin: 10% 0px 10% 30%;
-    font-size: var(--mainfont);
-    position: relative;
-    display: inline;
-}
-
 #experience {
-    margin: 5% 0px 0px 30%;
     color: var(--Green);
     font-size: 30px;
 }
@@ -270,147 +65,33 @@ main ul li::before {
 #projects {
     color: var(--Green);
     font-size: var(--mainfont);
-    margin: 5% 0px 0px 30%;
-
 }
 
-#contact {
-    display: block;
-    font-weight: bold;
-    margin: 7% 0px 0px 30%;
-    color: var(--Green);
-    font-size: var(--mainfont);
-    color: var(--Green);
-    
-}
-
-/* clickable link for email */
-
-.intouch {
-    color: var(--Green);
+.projectExample {
+    color: var(--LightGreen);
+    font-size: 20px;
     font-family: var(--font-mono);
-    font-size: var(--mainfont);
-    line-height: 1.1;
-    margin: 2% 0px 2% 30%;
-    display: block;
-    position: relative;
-    padding: 10px;
-    border: var(--Green) solid;
-    width: fit-content;
+    line-height: 1.5
 }
 
-.intouch:hover {
-    transform: scale(1.3);
-    transition: var(--transition);
-}
-
-/* footer styling + shadows */
-
-footer {
-    text-align: center;
-    margin: 10% 0px 0px 0px;
+.maincontent {
     display: block;
     color: var(--Slate);
-    font-size: 15px;
-    font-family: var(--font-mono); 
-    box-shadow: 0 0 50px rgb(0 0 0 / 75%);
-    clip-path: inset(-75px 0px 0px 0px);
+    font-size: 20px;
+    font-family: var(--font-mono);
+    width: 35vw;
+    line-height: 1.5;
+    
 }
 
-/* responsive design for diff screen types */
-
-@media screen and (max-width: 1450px) {
-   
-
-    body header ul{
-        margin: 0px 0px 10% 0px;
-    }
-    
-    main div {
-        transform: scale(0.7);
-    }
-    
-    main a {
-        transform: scale(0.7);
-    }
-
-    .positionimg {  
-        width: 50vw;
-    }
-  }
-
-@media screen and (max-width: 1332px) {
-    body {
-        justify-content:stretch;
-
-    }
-    .maincontent {
-        width: 55vw;
-    }
-
-    body header ul{
-        margin: 0px 0px 10vw 0px;
-    }
-    #projects {
-        margin: none;
-    }
-    .positionimg {
-        margin: 5% 0px 0px 15vw ;
-    }
-    
-    main h2 {
-        font-size: 40px;
-    }
-
-    main h3 {
-        font-size: 40px;
-    }
-
-    .nav2 {
-        display: none;
-    }
-
-  }
-
-@media screen and (max-width: 992px) {
-    .maincontent {
-        width: 50vw;
-        margin: 1% 0px 0px 20vw;
-    }
-
-    .positionimg {  
-        width: 15vw;
-    }
+footer .main-footer{  padding: 20px 0;  background: #252525;}
+footer ul{  padding-left: 0;  list-style: none;}
 
 
-  }
+.typo-light p,
+.typo-light div,
+.typo-light span,
+.typo-light small{  color: #fff;}
 
-
-@media screen and (max-width: 750px) {
-    .maincontent {
-        width: 70vw;
-    }
-
-    img {
-        transform: scale(0.75);
-    }
-
-    
-  }
-
-  @media screen and (max-width: 600px) {
-    .maincontent {
-        width: 60vw;
-        margin: none;
-    }
-
-    img {
-        transform: scale(0.65);
-    }
-
-    .positionimg {
-        margin: 0px 0px 0px 15px ;
-    }
-
-  }
-
+ul.social-footer2 { margin: 0;padding: 0; width: auto;}
+ul.social-footer2 li {display: inline-block;padding: 10px;}
