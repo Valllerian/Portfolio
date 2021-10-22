@@ -14,27 +14,29 @@
         <link rel="stylesheet" href="./assets/reset.css" />
         <link rel="stylesheet" href="./assets/style.css" />
 </head>
-
 <!-- Visiable part of the website -->
+
 <body class = "body">
+  <!-- Bootstrap NavBar with links to each section -->
     <nav class="navbar navbar-expand-lg  bg-dark">
         <div class="container collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item ">
-              <a class="navbarText nav-link" href="#about-me">01.About Me   | </a>
+              <a class="navbarText nav-link" href="#about-me">01.About Me   <span class="hidden">|</span> </a>
             </li>
             <li class="nav-item">
-              <a class="navbarText nav-link" href="#experience">02.Experience   |</a>
+              <a class="navbarText nav-link" href="#experience">02.Experience   <span  class="hidden">|</span></a>
             </li>
             <li class="nav-item">
-              <a class="navbarText nav-link" href="#projects">03.Projects   |</a>
+              <a class="navbarText nav-link" href="#projects">03.Projects   <span  class="hidden">|</span></a>
             </li>
             <li class="nav-item">
-                <a class="navbarText nav-link" href="#footer">04.Contact    |</a>
+                <a class="navbarText nav-link" href="#footer">04.Contact    <span  class="hidden">|</span></a>
               </li>
               <li class="nav-item">
+                <!-- Resume is available for download onClick -->
                     <p>
-                       <a href="assets/LinkedResume.docx" target="_blank" class="navbarText " download><i class="fa fa-download"></i>Download CV</a>
+                       <a href="assets/LinkedResume.docx" target="_blank" class="navbarText " id="resume" download><i class="fa fa-download"></i>Download CV</a>
                     </p>
                
               </li>
@@ -43,14 +45,14 @@
       </nav>
 
     <main  class="container">
-
-    <div class="mt-5 mb-5">
-      <h1>Hi, my name is</h1>
-      <h2>Valerii Bihun.</h2>
-      <h3>And I build things for the web.</h3>
-      <p>I am a future web developer and a current student of Denver Univercity Coding bootcamp.</p>
+      <!-- Main introduction -->
+    <div class="mt-5 mb-5" >
+      <h1 class="intro">Hi, my name is</h1>
+      <h2 class="intro">Valerii Bihun.</h2>
+      <h3 class="intro">And I build things for the web.</h3>
+      <p class="intro">I am a future web developer and a current student of Denver Univercity Coding bootcamp.</p>
     </div>
-
+    <!-- Brief description and list of learned languages\apps -->
     <div class="mt-5 mb-5">
         <h4 id="about-me">01.<span class="mainheaders"> About Me:</span></h4>
         <p class="maincontent">Hello! My name is Valerii and I enjoy creating things that live on the internet!
@@ -66,20 +68,20 @@
             </ul>
         </p>
     </div>
-  
+  <!-- Experience will be added later -->
     <div class="onRight mt-5 mb-5 text-right middleelement">
             <h5 id="experience">02.<span class="mainheaders"> Experience:</span></h5>
             <p class="maincontent">I’m currently working at a non-tech position and have no experience in IT-related jobs but I look forward to be a part of an entirely different environment! Given my entrepreneurial and curious nature, I am constantly researching the topic (currently working on a technical side)  and broadening my knowledge. </p> 
     </div>
 
     <section3 class=" mt-5 mb-5 middleelement">
-
+      <!-- Main projects with description and links to the repo and deployed app -->
         <h6 id="projects">03.<span class="mainheaders"> Projects:</span></h6>
         <p class="projectExample"> 3.1 Weather Dashboard</p> 
         <p class="maincontent"> This is a a simple weather application that allows a user to find out the weather forecast in the city! This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code.</p> 
         <p class="mt-5  maincontent"> Deployed application is available on: <a href="https://valllerian.github.io/Weather-Dashboard/" target="_blank">Weather dashboard</a></p> 
         <p class=" mb-5 maincontent"> GitHub repo is available on: <a href="https://github.com/Valllerian/Weather-Dashboard" target="_blank">GitHub</a></p> 
-        
+        <!-- Each project is presented in a slideshow -->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -104,7 +106,7 @@
             </button>
 
           </div>
-
+<!-- Project #2 presentation -->
         <div class="onRight">
             <p class="mt-5 projectExample"> 3.2 A Simple Code Quiz</p> 
             <p class="maincontent "> This is a Coding Quiz for JavaScript.</p> 
@@ -130,7 +132,7 @@
                 </div>
               </div>
         </div>
-          
+          <!-- Project #3 presentation -->
           <p class="mt-5 projectExample"> 3.3 Planner project</p> 
           <p class="maincontent"> This is a a simple calendar application that allows a user to save events for each hour of the day. </p> 
           <p class="mt-5  maincontent"> Deployed application is available on: <a href="https://valllerian.github.io/Planner-project/" target="_blank">Planner Project</a></p>  
@@ -148,7 +150,7 @@
               </div>
             </div>
           </div>
-
+<!-- Main project presentation -->
         <div class="onRight">
             <p class="mt-5 projectExample"> 3.4 Main Project #1 - "Live the Movie"</p> 
             <p class="maincontent "> This project was created in order to provide our users with a holiday filled evening. Using javascript, css, and HTML, I created a holiday themed page from scratch that uses two third party APIs, Spoonacular and TMDB, to fetch holiday themed recipes and movies.</p> 
@@ -171,7 +173,7 @@
     </section3>
 
     </main>
-
+    <!-- Footer with Social links and email address --available on click msg -->
       <footer id="footer" class="mt-5 footer-1">
 
         <div class="main-footer widgets-dark typo-light">

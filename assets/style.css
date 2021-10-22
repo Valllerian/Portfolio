@@ -1,3 +1,4 @@
+/* Main styles are saved for easier multiple usage */
 :root {
     --Navy: #0a192f;
     --LightNavy: #112240;
@@ -9,7 +10,6 @@
     --LightGreen: #23b693;
     --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",sans-serif;
     --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-
     --mainfont: 30px;
     --transition: 375ms ease-in-out;
    } 
@@ -25,6 +25,7 @@
     text-align: center;
 }
 
+/* Main text styling */
 main h1 {
     color: var(--Green);
     font-family: var(--font-mono);
@@ -52,6 +53,7 @@ main p {
     
 }
 
+/* Each section ID for links and styling */
 #about-me {
     color: var(--Green);
     font-size: var(--mainfont);
@@ -89,10 +91,16 @@ main p {
     
 }
 
+/* displaying text of some sections on the right */
 .onRight {
     text-align:right;
 }
 
+.hidden{
+    
+}
+
+/* footer style from bootstrap */
 footer .main-footer{  padding: 20px 0;  background: #252525;}
 footer ul{  padding-left: 0;  list-style: none;}
 
@@ -104,3 +112,26 @@ footer ul{  padding-left: 0;  list-style: none;}
 
 ul.social-footer2 { margin: 0;padding: 0; width: auto;}
 ul.social-footer2 li {display: inline-block;padding: 10px;}
+
+
+/* Responsive design added (sizes found on Stackoverflow) */
+
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (max-width:961px)  { 
+    .intro {
+        font-size: var(--mainfont);
+      }
+    .navbarText {
+        font-size: 20px;
+    }
+ }
+
+ @media (max-width:1400px)  { 
+    .hidden {
+        visibility: hidden;
+      }
+    #resume {
+        font-size: 25px;
+    }
+ }
