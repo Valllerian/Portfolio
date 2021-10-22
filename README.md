@@ -13,6 +13,8 @@ This project is going to be the base of my future portfolio and will be imprived
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Collaborators](#Collaborators)
+
 
 ## Installation
 Current project has been saved in my personal GitHub repository and is currently available for cloning and reviews on:
@@ -67,3 +69,7 @@ Current project is unlicensed. Which means - "Anyone is free to copy, modify, pu
 distribute this software, either in source code form or as a compiled
 binary, for any purpose, commercial or non-commercial, and by any
 means." (Quote for source #3)
+
+## Collaborators:
+
+Valerii Bihun: valeriibihun.co@gmail.com
